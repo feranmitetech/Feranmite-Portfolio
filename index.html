@@ -274,9 +274,25 @@ footer{background:var(--bg-navy);padding:32px 0}
 @media(max-width:900px){
   .hero-grid,.about-grid,.exp-grid,.contact-grid{grid-template-columns:1fr}
   .hero-right{order:-1;max-width:340px;margin:0 auto}
+
+  /* ── center the profile card ── */
+  .profile-card{margin-left:auto;margin-right:auto;max-width:300px}
+
+  /* ── shrink hero headline and body ── */
+  .hero-headline{font-size:26px;letter-spacing:-0.5px}
+  .hero-body{font-size:14px}
+
+  /* ── shrink buttons to match "Book Consultation" size ── */
+  .btn-primary,.btn-secondary{padding:9px 18px;font-size:12px}
+
+  /* ── stats in one row ── */
+  .hero-stats{display:flex;flex-direction:row;justify-content:center;gap:24px}
+  .stat-item .num{font-size:22px}
+  .stat-item .lbl{font-size:10px}
+
   .proj-card[data-featured="true"] .proj-inner{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
   .proj-card[data-featured="true"]{grid-column:auto}
-  .proj-grid{grid-template-columns:1fr}
 }
 @media(max-width:680px){
   .nav-link:not(.nav-hire){display:none}
