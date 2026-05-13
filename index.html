@@ -274,16 +274,11 @@ footer{background:var(--bg-navy);padding:32px 0}
 @media(max-width:900px){
   .hero-grid,.about-grid,.exp-grid,.contact-grid{grid-template-columns:1fr}
   .hero-right{order:-1;max-width:340px;margin:0 auto}
-  .hero-content{text-align:center}
-  .hero-badge{justify-content:center;margin-left:auto;margin-right:auto}
-  .hero-headline{text-align:center}
-  .hero-body{text-align:center;margin-left:auto;margin-right:auto}
-  .hero-ctas{justify-content:center}
-  .hero-stats{justify-content:center}
-  .values-list{align-items:center}
+  .hero-content{text-align:center}                                /* 👈 add this */
+  .hero-ctas{justify-content:center} 
   .proj-card[data-featured="true"] .proj-inner{grid-template-columns:1fr}
-  .projects-grid{grid-template-columns:1fr}
   .proj-card[data-featured="true"]{grid-column:auto}
+  .proj-grid{grid-template-columns:1fr}
 }
 @media(max-width:680px){
   .nav-link:not(.nav-hire){display:none}
