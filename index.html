@@ -282,7 +282,8 @@ footer{background:var(--bg-navy);padding:32px 0}
 }
 @media(max-width:680px){
   /* kill the grid entirely on mobile */
-  .hero-grid{ display: block; width: 100%; }
+  .hero-grid { display: flex; flex-direction: column; width: 100%; }
+  .hero-right { order: -1; }
   .hero-content{ width: 100%; max-width: 100%; }
   .hero-right{ width: 100%; margin-bottom: 24px; }
   .profile-card{ max-width: 300px; margin: 0 auto; }
