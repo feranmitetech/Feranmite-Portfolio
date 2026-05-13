@@ -279,9 +279,27 @@ footer{background:var(--bg-navy);padding:32px 0}
   .proj-grid{grid-template-columns:1fr}
 }
 @media(max-width:680px){
-  .nav-link:not(.nav-hire){display:none}
-  .nav-toggle{display:flex}
-  .hero-stats{gap:22px}
+  /* fix overflow on hero text side */
+  #hero .container{ padding: 0 20px; }
+  .hero-grid{ gap: 24px; overflow: hidden; }
+  .hero-content{ width: 100%; max-width: 100%; overflow: hidden; }
+
+  /* center the photo card */
+  .hero-right{ width: 100%; display: flex; justify-content: center; }
+  .profile-card{ width: 80%; max-width: 280px; margin: 0 auto; }
+
+  /* shrink headline and body so they don't overflow */
+  .hero-headline{ font-size: 22px; letter-spacing: -0.3px; }
+  .hero-body{ font-size: 13px; }
+
+  /* buttons full width but contained */
+  .hero-ctas{ flex-direction: column; width: 100%; }
+  .btn-primary, .btn-secondary{ width: 100%; justify-content: center; padding: 11px 20px; font-size: 13px; }
+
+  /* stats all 3 in one row */
+  .hero-stats{ flex-direction: row; justify-content: space-between; gap: 0; flex-wrap: nowrap; }
+  .stat-item .num{ font-size: 20px; }
+  .stat-item .lbl{ font-size: 9px; letter-spacing: 0.5px; }
 }
 @media(max-width:400px){
   .hero-ctas{flex-direction:column;align-items:stretch}
